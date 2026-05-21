@@ -24,7 +24,7 @@
 
     body {
       min-height: 100dvh;
-      padding: max(6px, env(safe-area-inset-top)) 18px max(10px, env(safe-area-inset-bottom));
+      padding: max(6px, env(safe-area-inset-top)) 10px max(10px, env(safe-area-inset-bottom));
       display: flex;
       align-items: flex-start;
       justify-content: center;
@@ -49,11 +49,11 @@
       border: 1px solid var(--line);
       border-radius: 999px;
       color: rgba(255, 255, 255, 0.8);
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: Baskerville, "Libre Baskerville", Georgia, "Times New Roman", serif;
       font-size: 16px;
-      font-style: italic;
+      font-style: normal;
       font-weight: 700;
-      letter-spacing: 0.01em;
+      letter-spacing: 0.02em;
       text-align: center;
     }
 
@@ -61,7 +61,7 @@
       width: fit-content;
       max-width: 100%;
       margin: 0 auto;
-      padding: 21px 14px 23px;
+      padding: 21px 8px 23px;
       border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
     }
@@ -82,6 +82,20 @@
     }
 
     @media (max-width: 320px) {
+      body {
+        padding-left: 2px;
+        padding-right: 2px;
+      }
+
+      .mantra {
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+
+      .phrase {
+        font-size: min(31px, 9.2vw);
+      }
+
       .badge {
         display: none;
       }
